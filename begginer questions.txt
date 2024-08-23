@@ -1,0 +1,166 @@
+6. function reverseString(str) {
+    return str.split('').reverse().join('');
+}
+
+
+const originalString = "Hello!";
+const reversedString = reverseString(originalString);
+console.log(reversedString); 
+
+3. var a=7;
+var b=8;
+var c=5;
+if(a>=b && a>=c){
+  console.log("a is maximum")
+}else if(b>=a && b>=c){
+  console.log("b is maximum")
+}else{
+  console.log("c is maximum")
+}
+
+12. const number=10
+let n1=0,n2=1,nextTerm;
+console.log("fibonacci series:");
+for(let i=1;i<=number;i++){
+  console.log(n1);
+  nextTerm=n1+n2;
+  n1=n2;
+  n2=nextTerm
+}
+
+8. var arr=[2,4,5,7,9]
+function minvalue(){
+  var minvalue=Math.min(...arr)
+  console.log("minvalueis:"+minvalue)
+}
+minvalue();
+
+5. var factorial_number=1;
+for(var i=5;i>0;i--){
+  factorial_number=factorial_number*i
+}
+console.log(factorial_number)
+
+4. var number=2;
+if(number%2==0){
+  console.log("number is even")
+}else{
+  console.log("number is odd")
+}
+
+13. var number=;
+var count=0;
+for(var i=2;i<number;i++){
+  if(number%i==0){
+    count=count+1
+  }
+}
+if(count>0){
+  console.log(number," not prime")
+}else{
+  console.log(number," prime")
+}
+
+2. var sum=0;
+function numbers(num1,num2){
+  sum=num1+num2;
+}
+numbers(2,10)
+console.log(sum);
+
+1. function print(){
+  console.log("hellow world!");
+}
+print();
+
+9. var arr=[2,4,6,8,3]
+arr.sort();
+console.log(arr)
+
+10. var  mainString = "Hello, World!";
+var subString = "World";
+function strings(str, substring) {
+    return str.includes(substring);
+}
+
+console.log(strings(mainString, subString)); 
+# help by copilot
+
+27. function findmissingnumber(arr){
+  var n=arr.length+1;
+  var totalsum=(n*(n+1))/2;
+  var arrsum=arr.reduce((acc, num) => acc + num, 0);
+  return totalsum-arrsum
+}
+  var examplearr=[1,2,4,5,6];
+  console.log(findmissingnumber(examplearr))
+ # help by copilot
+
+21. function randomnumbmer(min,max){
+  return Math.floor(Math.random() * (max-min+1))+min;
+}
+var min=1;
+var max=10;
+console.log(randomnumbmer(min,max))
+
+23. function feranheate(celsius){
+  return (celsius*9/5)+32;
+}
+var celsius=45;
+console.log(feranheate(celsius))
+
+24. function removelement(arr,element){
+  return arr.filter(item => item !== element);
+}
+var arr=[1, 2, 3, 4, 5]
+var element=3
+console.log(removelement(arr,element))
+
+26. function findLongestWord(str) {
+    let words = str.split(' ');
+    let longestWord = '';
+
+    for (let word of words) {
+        if (word.length > longestWord.length) {
+            longestWord = word;
+        }
+    }
+
+    return longestWord;
+}
+
+
+let exampleString = "The quick brown fox jumps over the lazy dog";
+console.log(findLongestWord(exampleString)); 
+# help by copilot
+
+29. function gcd(a,b){
+  while(b!==0){
+    var temp=b;
+    b=a%b;
+    a=temp
+  }
+  return a;
+}
+function lcm(a,b){
+  return (a*b)/gcd(a,b);
+}
+var num1=12;
+var num2=15;
+console.log(lcm(num1,num2));
+# help by copilot
+
+28. function gcd(a, b) {
+    while (b !== 0) {
+        let temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
+
+
+let num1 = 48;
+let num2 = 18;
+console.log(gcd(num1, num2)); 
+# help by copilot
