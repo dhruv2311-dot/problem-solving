@@ -1,0 +1,49 @@
+1. var person={name:"dhruv",
+age:18,
+city:"dhrangadhra"}
+console.log(person)
+
+2. var person={name:"dhruv",
+age:18,
+city:"dhrangadhra"}
+console.log(person.name)
+
+3. const car = { brand: 'Toyota', model: 'Corolla' };
+car.year=2024;
+console.log(car)
+
+4. const user = { username: 'john_doe', password: '12345' };
+delete user.password
+console.log(user)
+
+5. const obj = { name: 'Alice', age: 30 };
+console.log(obj.hasOwnProperty('age'));
+
+6. var obj1 = { a: 1, b: 2 };
+ var obj2 = { b: 3, c: 4 };
+ var mergeobjects={...obj1,...obj2}
+ console.log(mergeobjects)
+
+8. var user={ name: 'John', age: 30, city: 'New York' }
+for (var key in user) {
+    if (user.hasOwnProperty(key)) {
+        console.log(`${key}: ${user[key]}`);
+    }
+}
+
+11. const obj = { name: 'Alice', age: 30, city: 'NYC' }
+const valuesArray = Object.values(obj);
+console.log(valuesArray);
+
+12. function arrayToObject(arr, keyField) {
+    return arr.reduce((obj, item) => {
+        obj[item[keyField]] = item;
+        return obj;
+    }, {});
+}
+
+let exampleArray =[{ key: 'a', value: 1 }, { key: 'b', value: 2 }]
+
+let result = arrayToObject(exampleArray, 'id');
+console.log(result);
+# help by copilot
